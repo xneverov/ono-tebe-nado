@@ -1,1 +1,42 @@
-/* место для вашего кода */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 143px 57px 142px 58px;
+  height: 105px;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 33px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__links-list-item {
+  list-style: circle;
+  text-underline-position: under;
+}
+
+.header__logo {
+  position: relative;
+  height: 105px;
+  width: 137px;
+  right: 76px;
+}
+
+.header__logo-image {
+  height: 100%;
+  width: 100%;
+}
+
+.address {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.35;
+  text-underline-position: under;
+}
