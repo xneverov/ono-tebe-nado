@@ -16,6 +16,10 @@
   list-style: none;
 }
 
+.header__link_active {
+  text-decoration: none;
+}
+
 .header__links-list-item {
   text-underline-position: under;
   list-style: circle;
@@ -39,8 +43,7 @@
   z-index: -1;
   margin: 0 9px;
   padding: 162px 49px 48px 47px;
-  background-image: url(../images/cover.jpg);
-  background-position: center;
+  background: url(../images/cover.jpg) no-repeat center / cover;
 }
 
 .overlay {
@@ -146,8 +149,11 @@
   padding: 48px 35px 46px 39px;
 }
 
+/* Изанчально background position у .card_type_book сделал -350px чтобы карточка совпадала со старым макетом.
+   Исправил на center, теперь больше подходит к новому макету.*/
+
 .card_type_film {
-  background: url(../images/card-lot-01.jpg) no-repeat -350px / cover;
+  background: url(../images/card-lot-01.jpg) no-repeat center / cover;
 }
 
 .card_type_book {
@@ -247,6 +253,10 @@
   font-size: 18px;
   line-height: 21px;
   text-underline-position: under;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
 }
 
 .footer__social-list {
